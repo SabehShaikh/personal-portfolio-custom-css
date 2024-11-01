@@ -1,0 +1,84 @@
+/* services.module.css */
+
+.services {
+    padding-top: 3rem; /* Equivalent to py-12 */
+    padding-bottom: 3rem;
+}
+
+.container {
+    max-width: 1200px; /* Equivalent to mx-auto */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem;
+}
+
+.subTitle {
+    font-size: 1.125rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem; 
+}
+
+@media (min-width: 768px) { 
+    .subTitle {
+        font-size: 1.25rem; 
+    }
+    .serviceTitle {
+        font-size: 1.125rem; 
+    }
+    .serviceText {
+        font-size: 0.875rem;
+    }
+}
+
+.servicesList {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem; /* Equivalent to gap-8 */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+}
+
+@media (min-width: 640px) {
+    .servicesList {
+        grid-template-columns: repeat(2, 1fr); /* Equivalent to sm:grid-cols-2 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .servicesList {
+        grid-template-columns: repeat(3, 1fr); /* Equivalent to lg:grid-cols-3 */
+    }
+   
+}
+
+.serviceCard {
+    background-color: #2d3748; /* Equivalent to bg-gray-800 */
+    color: white;
+    padding: 24px; /* Equivalent to p-6 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.serviceCard:hover {
+    background-color: #38a169; /* Equivalent to hover:bg-green-400 */
+    color: black; /* Equivalent to hover:text-black */
+    transform: translateY(-0.5rem); /* Equivalent to hover:-translate-y-2 */
+}
+
+.serviceIcon {
+    font-size: 3rem; /* Equivalent to text-5xl */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+}
+
+.serviceTitle {
+    font-size: 1rem; /* Equivalent to text-base */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 0.75rem; /* Equivalent to mb-3 */
+}
+
+
+
+.serviceText {
+    font-size: 0.75rem; /* Equivalent to text-xs */
+}

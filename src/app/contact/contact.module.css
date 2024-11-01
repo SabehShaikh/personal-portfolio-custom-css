@@ -1,0 +1,133 @@
+.contact {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.container {
+    max-width: 1200px;
+    /* Equivalent to mx-auto */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    /* Equivalent to px-4 */
+    padding-right: 1rem;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+    .flexRow {
+        flex-direction: row;
+    }
+
+    .contactLeft {
+        margin-right: 2rem;
+    }
+}
+
+.contactLeft {
+    flex: 1 1 0%;
+
+}
+
+.subTitle {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    font-size: 1.125rem;
+    margin-top: 2rem;
+}
+
+.icon {
+    color: #C6F67E;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.socialIcons {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.socialIcon {
+    color: #B0B0B0;
+    font-size: 2rem;
+    margin-right: 1.25rem;
+    transition: transform 0.3s;
+}
+
+.socialIcon:hover {
+    color: #C6F67E;
+    transform: translateY(-0.3rem);
+}
+
+.downloadCV {
+    margin-top: 1.5rem;
+    display: inline-block;
+    background-color: #C6F67E;
+    color: #1f2937;
+    padding: 8px 16px;
+    border-radius: 0.5rem;
+
+}
+
+.downloadCV:hover {
+    background-color: #A6D94D;
+}
+
+.btn {
+    background-color: #C6F67E;
+    color: #3b3b3b;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.btnHover:hover {
+    background-color: #A6D94D;
+}
+
+.contactRight{
+    flex: 1 1 0%;
+
+}
+
+.form { 
+    margin-top: 1rem;
+}
+
+.formInput {
+    width: 100%;
+    background-color: #262626;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.formButton {
+    background-color: #C6F67E;
+    color: #3b3b3b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.formButton:hover {
+    background-color: #A6D94D;
+}
+
+.hidden {
+    display: none;
+}

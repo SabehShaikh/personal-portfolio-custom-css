@@ -1,0 +1,98 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #309d61
+}
+
+.logo {
+    width: 175px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #C6F67E;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.menu li a:hover::after {
+    width: 100%;
+}
+
+/* Hide FaBars and FaTimes icons on larger screens */
+.menuIcon, .menuCloseIcon {
+    display: none;
+}
+
+/* For mobile view */
+@media only screen and (max-width: 640px) {
+    .menuIcon {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: block;
+        background: #309D61;
+        color: white;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .menuOpen {
+        right: 0;
+    }
+
+    .menu li {
+        display: block;
+        margin: 25px;
+       
+    }
+
+    .menu li a {
+font-weight: bold;
+        color: white;
+    }
+
+    .menuCloseIcon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        
+    }
+}

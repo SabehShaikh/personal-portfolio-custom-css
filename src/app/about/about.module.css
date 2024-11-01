@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.aboutCol1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.profileImage {
+  border-radius: 9999px;
+  object-fit: cover;
+  width: 75%;
+}
+
+.aboutCol2 {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabTitles {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabLinks {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.tabLinks::after {
+  content: '';
+  width: 0;
+  /* Start with width of 0 to keep it hidden */
+  height: 3px;
+  background: #c6f67e;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.5s ease;
+  /* Smooth transition */
+}
+
+.activeLink {
+  color: #c6f67e;
+  font-weight: bold;
+}
+
+.tabLinks.activeLink::after {
+  width: 50%;
+}
+
+
+/* .tabContents {
+  margin-top: 1.5rem;
+} */
+
+/* .activeTab {
+  display: block;
+} */
+
+.list {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 24px;
+}
+
+.listItem {
+  margin-bottom: 1rem;
+}
+
+.skillTitle {
+  font-weight: bold;
+  color: #c6f67e;
+}
+
+.date {
+  color: #c6f67e;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .aboutCol1 {
+    width: 50%;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .profileImage {
+    width: 33.333333%;
+  }
+
+  .aboutCol2 {
+    width: 50%;
+    text-align: left;
+  }
+
+  .description {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .tabTitles {
+    justify-content: start;
+  }
+}
+
+@media (min-width: 640px) {
+  .profileImage {
+    width: 50%;
+  }
+}
